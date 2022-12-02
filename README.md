@@ -1,0 +1,1 @@
+<a href="https://fabricmc.net/wiki/doku.php">WIKI</a>
