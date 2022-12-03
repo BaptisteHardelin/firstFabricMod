@@ -1,5 +1,9 @@
 {
   "item.tutorial.custom_item": "Custom Item",
-  "item.tutorial.custom_item_rep": "Custom Item",
+  "item.tutorial.custom_material": "Custom Material",
+  "item.tutorial.custom_material_helmet": "Custom Helmet",
+  "item.tutorial.custom_material_chestplate": "Custom Chestplate",
+  "item.tutorial.custom_material_leggins": "Custom Leggings",
+  "item.tutorial.custom_material_boots": "Custom Boots",
   "itemGroup.tutorial.custom_group": "Custom Group"
 }
