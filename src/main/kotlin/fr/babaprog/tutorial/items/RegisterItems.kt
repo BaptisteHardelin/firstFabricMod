@@ -2,11 +2,13 @@ package fr.babaprog.tutorial.items
 
 import fr.babaprog.tutorial.ModName
 import fr.babaprog.tutorial.armors.armorMaterials.CustomArmorMaterial
+import fr.babaprog.tutorial.enchantment.FrostEnchantment
 import fr.babaprog.tutorial.tools.CustomAxe
 import fr.babaprog.tutorial.tools.CustomHoe
 import fr.babaprog.tutorial.tools.CustomPickaxe
 import fr.babaprog.tutorial.tools.PotatoToolMaterial
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
+import net.minecraft.enchantment.Enchantment
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.ArmorItem
 import net.minecraft.item.Item
@@ -40,27 +42,39 @@ class RegisterItems {
         val POTATO_AXE = CustomAxe(PotatoToolMaterial.INSTANCE, 7.0F, -3.2F, settingsGroup)
         val POTATO_HOE = CustomHoe(PotatoToolMaterial.INSTANCE, 7, -3.2F, settingsGroup)
 
-        fun register() {
-            custom_registry("custom_item", CUSTOM_ITEM)
-            custom_registry("custom_material", CUSTOM_MATERIAL)
-            custom_registry("custom_material_helmet", CUSTOM_MATERIAL_HELMET)
-            custom_registry("custom_material_chestplate", CUSTOM_MATERIAL_CHESTPLATE)
-            custom_registry("custom_material_leggins", CUSTOM_MATERIAL_LEGGINS)
-            custom_registry("custom_material_boots", CUSTOM_MATERIAL_BOOTS)
-            custom_registry("potato_shovel", POTATO_SHOVEL)
-            custom_registry("potato_sword", POTATO_SWORD)
-            custom_registry("potato_pickaxe", POTATO_PICKAXE)
-            custom_registry("potato_axe", POTATO_AXE)
-            custom_registry("potato_hoe", POTATO_HOE)
+        val FROST = FrostEnchantment()
+
+        fun register_tutorial() {
+            registry_items("custom_item", CUSTOM_ITEM)
+            registry_items("custom_material", CUSTOM_MATERIAL)
+            registry_items("custom_material_helmet", CUSTOM_MATERIAL_HELMET)
+            registry_items("custom_material_chestplate", CUSTOM_MATERIAL_CHESTPLATE)
+            registry_items("custom_material_leggins", CUSTOM_MATERIAL_LEGGINS)
+            registry_items("custom_material_boots", CUSTOM_MATERIAL_BOOTS)
+            registry_items("potato_shovel", POTATO_SHOVEL)
+            registry_items("potato_sword", POTATO_SWORD)
+            registry_items("potato_pickaxe", POTATO_PICKAXE)
+            registry_items("potato_axe", POTATO_AXE)
+            registry_items("potato_hoe", POTATO_HOE)
+
+            registry_enchantment("frost", FROST)
 
             logger.info("All Items has been registered")
         }
 
-        private fun custom_registry(name: String, item: Item) {
+        private fun registry_items(name: String, item: Item) {
             Registry.register(
                 Registry.ITEM,
                 Identifier(ModName.MOD_ID, name),
                 item
+            )
+        }
+
+        private fun registry_enchantment(name: String, enchantment: Enchantment) {
+            Registry.register(
+                Registry.ENCHANTMENT,
+                Identifier(ModName.MOD_ID, name),
+                enchantment
             )
         }
     }

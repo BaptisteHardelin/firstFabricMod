@@ -10,5 +10,6 @@
   "item.tutorial.potato_pickaxe": "Potato Pickaxe",
   "item.tutorial.potato_axe": "Potato Axe",
   "item.tutorial.potato_hoe": "Potato Hoe",
+  "enchantment.tutorial.frost": "Frost",
   "itemGroup.tutorial.custom_group": "Custom Group"
 }
