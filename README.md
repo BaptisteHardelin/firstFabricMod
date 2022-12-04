@@ -5,4 +5,5 @@
 <li><a href="https://fabricmc.net/wiki/tutorial:recipes">Crafting Recipes</a></li>
 <li><a href="https://fabricmc.net/wiki/tutorial:armor">Armor</a></li>
 <li><a href="https://fabricmc.net/wiki/tutorial:tools">Tools</a></li>
+<li><a href="https://fabricmc.net/wiki/tutorial:enchantments">Enchantments</a></li>
 </ul>
