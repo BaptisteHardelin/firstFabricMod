@@ -5,5 +5,10 @@
   "item.tutorial.custom_material_chestplate": "Custom Chestplate",
   "item.tutorial.custom_material_leggins": "Custom Leggings",
   "item.tutorial.custom_material_boots": "Custom Boots",
+  "item.tutorial.potato_shovel": "Potato Shovel",
+  "item.tutorial.potato_sword": "Potato Sword",
+  "item.tutorial.potato_pickaxe": "Potato Pickaxe",
+  "item.tutorial.potato_axe": "Potato Axe",
+  "item.tutorial.potato_hoe": "Potato Hoe",
   "itemGroup.tutorial.custom_group": "Custom Group"
 }
